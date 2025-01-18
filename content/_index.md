@@ -1,20 +1,116 @@
 +++
-title = "Supporting Autonomic Computing via BDI Tooling"
+title = "Introduction to my research area"
 outputs = ["Reveal"]
 +++
 
-# Supporting Autonomic Computing 
-# via BDI Tooling
-
-<br>
-
-Martina Baiardi
-
-<small>Department of Computer Science and Engineering (DISI)<br>
-Alma Mater Studiorum — Università di Bologna <br>
-Via dell’Università 50, 47522 Cesena (FC), Italy </small>
+# Overview on my research area
 
 ---
+
+# Brief introduction
+
+- 2nd year PhD Student from `University of Bologna` (`UNIBO`)
+- Supervisor: 
+![](https://www.unibo.it/uniboweb/utils/UserImage.aspx?IdAnagrafica=503326&IdFoto=e1c80103) [Danilo Pianini](https://www.unibo.it/sitoweb/danilo.pianini/en)
+- Research group: `Pervasive Computing`
+
+---
+
+## Some faces and topics we are currently working on
+
+![](./images/group-act.svg)
+
+---
+
+## What am I into
+
+![](./images/group-act.svg)
+
+
+<div class="overlay">
+  <div class="circle-1">
+  </div>
+  <div class="circle-2">
+  </div>
+  <div class="circle-3">
+  </div>
+  <div class="circle-4">
+  </div>
+</div>
+
+</circles>
+
+---
+
+## Industry
+
+- Active collaboration with the italian industry `SCM Group` that operates worldwide
+- Project: automation for software updates in the context of industrial woodworking machines
+  
+  where:
+  - heterogeneous devices
+  - globally distributed devices
+  - business-critical machines 
+
+- Main skills: 
+  * `Software updates` 
+  * `Autonomous pipelines` 
+  * `Containerization` 
+  * `Virtualization` 
+  * `Hypervisors`
+
+---
+
+## Deployment
+
+- Experimenting ways to easily manage several heterogeneous devices and use their resources
+- Two clusters offered to run experiments for both *students* and *researchers*:
+  * AlmaAI cluster
+  * Area 4.0 cluster
+- **Managed from researchers for researchers**
+- Main skills: 
+  * `Container orchestration` (`Docker` and `Kubernetes`)
+  * `Virtualization` 
+  * `Network configuration` 
+  * `Network file system`
+  * `Clustered storage`
+
+---
+
+## Conceptualization & Tools
+
+
+- `Macroprogramming / Aggregate Computing`: Controlling multiple devices/entities at once using `space` and `time`. 
+  
+  Languages, cronologically:
+  - `Protelis`: stand-alone language, not longer evolved but still maintained.
+  - `Scafi`: a Scala Domain-Specific Language (DSL)
+  - `Collektive`: a Kotlin Multi-platform DSL
+- `BDI Agent-Oriented Programming` 
+  - `JaKtA`: my master thesis, a Kotlin DSL implementation for modelling `BDI` agents.
+- `Simulation`
+  - `Alchemist`: a simulator for pervasive computing, inspired from chemistry reactions.
+
+---
+
+## Aggregate vs BDI Agents
+
+- Same purpose: a way for representing entities adhering to (some) Autonomic Computing principles
+  - ... but different scopes
+
+- `Aggregate Computing` is for representing elements in the environment which exhibit a `collective` behaviour.
+
+- `BDI Multi-Agent Programming` is for representing each entity in an environment using a well-known framework (`AgentSpeak(L)`), inspired from human mental process.
+  - **This is more my expertise area**
+
+---
+
+## Conceptualization strengths
+
+- 
+
+---
+
 
 ## Context
 #### Autonomic Computing
