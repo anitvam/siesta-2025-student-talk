@@ -75,6 +75,15 @@ outputs = ["Reveal"]
   * `Network file system`
   * `Clustered storage`
 
+<br />
+<br />
+
+<div>
+<small style="text-align: left"> 
+[*] Baiardi M., Ciatto G., Pianini D. - Infrastructures for the Edge-Cloud Continuum on a Small Scale: A Practical Case Study. ACSOS-C 2023
+</small>
+</div>
+
 ---
 
 ## Conceptualization & Tools
@@ -83,13 +92,28 @@ outputs = ["Reveal"]
 - `Macroprogramming / Aggregate Computing`: Controlling multiple devices/entities at once using `space` and `time`. 
   
   Languages, cronologically:
-  - `Protelis`: stand-alone language, not longer evolved but still maintained.
-  - `Scafi`: a Scala Domain-Specific Language (DSL)
-  - `Collektive`: a Kotlin Multi-platform DSL
+  - `Protelis`[1]: stand-alone language, not longer evolved but still maintained.
+  - `Scafi`[2]: a Scala Domain-Specific Language (DSL)
+  - `Collektive`[3]: a Kotlin Multi-platform DSL
 - `BDI Agent-Oriented Programming` 
-  - `JaKtA`: my master thesis, a Kotlin DSL implementation for modelling `BDI` agents.
+  - `JaKtA`[4]: my master thesis, a Kotlin DSL implementation for modelling `BDI` agents.
 - `Simulation`
-  - `Alchemist`: a simulator for pervasive computing, inspired from chemistry reactions.
+  - `Alchemist`[5]: a simulator for pervasive computing, inspired from chemistry reactions.
+
+<br />
+<br />
+
+<div>
+<small style="text-align: left">
+
+[1] [https://github.com/Protelis/Protelis](https://github.com/Protelis/Protelis) <br/>
+[2] [https://github.com/scafi/scafi](https://github.com/scafi/scafi)<br/>
+[3] [https://github.com/Collektive/collektive](https://github.com/Collektive/collektive)<br/>
+[4] [https://github.com/jakta-bdi/jakta](https://github.com/jakta-bdi/jakta)<br/>
+[5] [https://github.com/AlchemistSimulator/Alchemist](https://github.com/AlchemistSimulator/Alchemist)<br/>
+
+</small>
+</div>
 
 ---
 
@@ -107,58 +131,169 @@ outputs = ["Reveal"]
 
 ## Conceptualization strengths
 
-- 
+- A good way to describe the problem allows to explore different perspectives of it.
+
+![](./images/conceptual%20difference.png)
 
 ---
 
+# Aggregate Applications Examples 
 
-## Context
-#### Autonomic Computing
+---
 
-<br/>
+### Aggregate Swarm simulations
+
+![](https://user-images.githubusercontent.com/23448811/224012578-d375de46-23c3-44e6-99cf-9d937548a1a5.gif)
+![](https://user-images.githubusercontent.com/23448811/224012332-290c81e1-effa-4cab-ae03-c603c116dd99.gif)
+
+
+<div>
+<small style="text-align: left"> 
+
+[source: [https://github.com/scafi/macro-swarm](https://github.com/scafi/macro-swarm) 
+]
+
+</small>
+</div>
+
+---
+
+### Reinforcement Learning using Aggregate Models
 
 {{% multicol %}}{{% col %}}
 
-<img src="images/autonomic-diagram.svg" width="100%" />
 
-<div class="mx-5 text-center">
+![](./images/gaguzzi-paper.png)
 
-## *<i class="fa-solid fa-arrow-up"></i> MAPE-K* 
-Reference <u>model</u> for *Autonomic* and *self-\** systems design. 
 
-</div>
+{{% /col %}}{{% col %}}
 
-{{% /col %}}{{% col  %}}
+<div class="text-center">
 
-<div class="mx-5 text-center">
-
-{{% fragment %}}
-
-<img src="images/bdi-diagram.svg" width="100%" />
-
-## *<i class="fa-solid fa-arrow-up"></i> BDI* 
-Reference <u>framework</u> (*AgentSpeak(L)*) for *Multi-Agent Systems*. 
-
-{{% /fragment %}}
+![](./images/gnn-inside-aggregate.png)
 
 </div>
+
+- `Aggregate` is used to enhance agents' state during reinforcement learning
+- The information is obtained through the adoption of a `Graph Neural Network` in this paper.
+
 
 {{% /col %}}{{% /multicol %}}
 
-{{% fragment %}}
-<div class="position-absolute">
-<iframe src="https://giphy.com/embed/g01ZnwAUvutuK8GIQn" width="100%" height="100%" frameBorder="0" class="fixed-top" allowFullScreen></iframe>
 
-<div class="fixed-top " style="color:white">
-
-<h2 style="color:white"> Why isn't BDI common in autonomic loops? </h2>
-
-</div>
-
-</div>
-{{% /fragment %}}
+<small style="text-align: left"> 
+[*] Gianluca Aguzzi, Mirko Viroli, Lukas Esterle: Field-informed Reinforcement Learning of Collective Tasks with Graph Neural Networks. (2023) <br />
+</small>
 
 ---
+
+### Federated Learning using Aggregate Models
+
+{{% multicol %}}{{% col %}}
+
+<div class="text-center">
+
+![](./images/federated-learning-aggregate.png)
+
+</div>
+
+
+{{% /col %}}{{% col %}}
+
+- `Aggregate` is used to distribute the computation
+- I don't know a lot of details, this is a work in progress...
+
+
+{{% /col %}}{{% /multicol %}}
+
+ ---
+
+
+# How do I choose among these representation?
+## Let's start from an example
+
+---
+
+## Distributed Applications
+#### Running on unknown network topologies
+
+<br/>
+
+
+{{< figure src="images/path2.svg" width="50%" >}}
+
+
+
+---
+
+#### May be subject to unpredictable connectivity failures
+
+<br />
+
+{{< figure src="images/path2-6.svg" width="50%" >}}
+
+---
+
+#### We need *autonomous* entities <br/>capable to *adapt* their behaviour to the failure <br/>and continue to work as expected 
+<br />
+
+{{< figure src="images/path2-6-1.svg" width="50%" >}}
+
+---
+
+## *Here lies the first difference*
+
+Viewing system interactions in terms of:
+
+{{% multicol  %}}{{% col class="text-center" %}}
+
+information propagating through <br/> collectives of devices
+
+<i class="fa-solid fa-arrow-down"></i>
+
+`Aggregate Computing`
+
+{{% /col %}}{{% col class="text-center" %}}
+
+individual devices with different interactions <br/> with their peers in the environment
+
+<i class="fa-solid fa-arrow-down"></i>
+
+`Multi-Agent Systems`
+
+{{% /col %}}{{% /multicol %}}
+
+---
+
+## Agents
+
+<br />
+
+{{< figure src="images/path43-7.svg" width="50%" >}}
+
+---
+
+# Agent-Oriented Programming
+
+<br />
+
+
+{{< figure src="images/rect46.svg" width="50%" >}}
+
+<small>[1] Weiss, Gerhard, Multiagent Systems. MIT Press, 2013</small>
+
+---
+
+# Agent-Oriented Programming
+
+<br />
+
+{{< figure src="images/BDIAgents.svg" width="50%" >}}
+
+<small>[1] Weiss, Gerhard, Multiagent Systems. MIT Press, 2013</small>
+
+---
+
 
 # BDI?
 
@@ -180,7 +315,6 @@ Reference <u>framework</u> (*AgentSpeak(L)*) for *Multi-Agent Systems*.
 <br />
 
 <small style="text-align: left"> 
---- <br/>
 [1] Bratman, Michael. "Intention, plans, and practical reason." (1987) <br />
 [2] Anand S. Rao and Michael P. Georgeff. "BDI agents: From theory to practice." (1995) <br />
 [3] Anand S. Rao. "Agentspeak(l): BDI agents speak out in a logical computable language." (1996) 
@@ -188,44 +322,18 @@ Reference <u>framework</u> (*AgentSpeak(L)*) for *Multi-Agent Systems*.
 </div>
 
 
----
-
-## AgentSpeak(L) under the hood...
-
-<img src="images/architecture.png" width=50% />
 
 ---
 
-# MAPE-K vs. BDI: Key differences
+# AgentSpeak(L)
 
-### Conceptual vs. practical
 
-* **MAPE-K** defines a conceptual model, needs application-specific implementations
-    * favors ad-hoc implementations
-* **BDI** is typically reified into a practical tool (a language or library)
-    * enforces commitment to a technology
+{{< figure src="images/Interpreting-AgentSpeakL-Programs.png" width="50%" >}}
 
-### Architectural vs. formal
-
-* **MAPE-K** defines a reasoning architecture and a loop scheme
-* **BDI** has been formalised into AgentSpeak(L)
-    * Typical implementations adhere to the formal specification
-
-### Simple vs. complex
-
-* **MAPE-K** is simpler
-    * can be implemented on a per-application basis
-* **BDI** requires complex matching ad plan-selection algorithms
-    * hard to build from scratch in a custom fashion
 
 ---
 
-# BDI Agent Programming Languages
-{{% fragment %}}
-
-### ... some of them
-
-{{% /fragment %}}
+<!-- # BDI Agent Programming Languages
 
 <br />
 
@@ -242,112 +350,7 @@ Reference <u>framework</u> (*AgentSpeak(L)*) for *Multi-Agent Systems*.
 [5] D’Urso, F., Longo, C.F., Santoro, C.. "Programming intelligent iot systems with a python-based declarative tool." (2019) <br />
 [6] Palanca, J., Rincon, J.A., Carrascosa, C., Julián, V., Terrasa, A.. "A flexible agent architecture in SPADE." (2022)
 </small>
-</div>
-
----
-
-# Majority of BDI tools: Libraries
-
-<br>
-<br>
-
-{{% multicol class="text-center" %}} {{< col class="col-75">}}
-
-* Built for mainstream languages
-* Subject to the *syntactic restrictions* of their host language
-  * "True" AOP/BDI feeling hardly achieved
-
-{{< /col >}}
-
-{{< col class="col-25">}}
-
-{{< fragment >}}
-## <i class="fa-solid fa-arrow-right"></i> *custom language*
-{{< /fragment >}}
-
-{{< /col >}} {{% /multicol %}}
-
----
-
-# AOP Custom Languages
-
-<div>
-
-<div class=" w-50 m-auto text-right" style="text-align: left">
-
-<i class="fa-solid fa-check" style="color: green; margin-right: 10px"></i>
-Great ergonomy for BDI AOP (made by purpose)
-
-<i class="fa-solid fa-xmark" style="color: red; margin-right: 10px"></i>
-BDI-specific, not multi-paradigm 
-
-<i class="fa-solid fa-xmark" style="color: red; margin-right: 10px"></i>
-Steep learning curve
-
-<i class="fa-solid fa-xmark" style="color: red; margin-right: 10px"></i>
-Require custom tooling - IDEs, code suggestions, syntax highlighters, linters...
-
-<i class="fa-solid fa-xmark" style="color: red; margin-right: 10px"></i>
-Small community
-
-<i class="fa-solid fa-xmark" style="color: red; margin-right: 10px"></i>
-High maintenance cost!
-
-</div>
-
----
-
-# A hybrid approach
-
-{{< figure src="ergonomy.png" width="60%" >}} 
-
----
-
-# JaKtA: <br> <u>Ja</u>son-like <u>K</u>o<u>t</u>lin <u>A</u>gents [1]
-
-Internal Domain-Specific Language (DSL) implemented in Kotlin
-
-* Multi-paradigm support: OOP + FP + BDI AOP
-* Hosted on a mainstream language: gentle learning curve
-  * Great learning resources for Kotlin
-  * Significantly large community for help
-* Reuses the entire existing Kotlin toolchain
-  * Developed and *maintained* by the language maintainers and the community
-  * Maintenance is greatly reduced
-* Good ergonomy
-
-<br />
-<br />
-
-<div>
-<small style="text-align: left"> 
----<br/>
-[1] Baiardi, M., Burattini, S., Ciatto, G., & Pianini, D. (2023, September). JaKtA: BDI Agent-Oriented Programming in Pure Kotlin. 
-</small>
-</div>
-
----
-
-# Why kotlin?
-<br>
-
-{{% multicol %}}{{% col %}}
-* Natively multi-paradigm (OOP + FP)
-* Statically typed
-  * With a good IDE, helps understanding what can be written where
-* Direct support to internal DSLs
-  * a.k.a "Type-safe builders" in the Kotlin documentation
-* Support for multiplatform development
-{{% /col %}}
-
-{{< col class="text-center">}}
-
-* Growing community
-  * Strongly pushed by Google for Android
-{{< figure src="android-kotlin.png" width="70%" >}}
-
-{{% /col %}}{{% /multicol %}}
-
+</div> 
 
 ---
 
@@ -377,22 +380,114 @@ mas {                                                   // BDI specification
 }.start()
 ```
 
----
-
-## Future work
-JaKtA is still in its early stages, in the future we plan to: 
-* Provide stable tools to emulate dynamic environments (**Simulation**)
-    * Validate the integration with an application, e.g.: drone swarm coordination (**Use case**) 
-* Expose BDI abstractions within the debugger for helping bug inspection (**Debug**)
-* Use BDI abstractions in small fragments of non-BDI programs (**Bidirectional paradigm blending**)
-    * (we can already use fragments of functional and OOP inside a BDI program)
+<i class="fa-solid fa-file-code"></i> [SoccerMas.kt](https://github.com/jakta-bdi/jakta-examples/blob/main/src/main/kotlin/it/unibo/jakta/agents/examples/soccer/SoccerMas.kt) 
 
 ---
+-->
 
-# try jakta
-<br>
+# ...Simplified
+## A lot of similarities with Autonomic Computing MAPE-K cycle
 
-[github.com/jakta-bdi/jakta-examples](https://github.com/jakta-bdi/jakta-examples)
+<br/>
 
-<img src="images/qr-code.svg" width="20%" />
+{{% multicol %}}{{% col %}}
 
+<img src="images/autonomic-diagram.svg" width="100%" />
+
+<div class="mx-5 text-center">
+
+## *<i class="fa-solid fa-arrow-up"></i> MAPE-K* 
+Reference <u>model</u> for *Autonomic* and *self-\** systems design. 
+
+</div>
+
+{{% /col %}}{{% col  %}}
+
+<div class="mx-5 text-center">
+
+
+<img src="images/bdi-diagram.svg" width="100%" />
+
+## *<i class="fa-solid fa-arrow-up"></i> BDI* 
+Reference <u>framework</u> (*AgentSpeak(L)*) for *Multi-Agent Systems*. 
+
+</div>
+
+{{% /col %}}{{% /multicol %}}
+
+<div>
+<small style="text-align: left"> 
+[*] Baiardi M. - Supporting Autonomic Computing via BDI Tooling. ACSOS-C 2024
+</small>
+</div>
+
+---
+<!-- 
+# MAPE-K vs. BDI: Key differences
+
+### Conceptual vs. practical
+
+* **MAPE-K** defines a conceptual model, needs application-specific implementations
+    * favors ad-hoc implementations
+* **BDI** is typically reified into a practical tool (a language or library)
+    * enforces commitment to a technology
+
+### Architectural vs. formal
+
+* **MAPE-K** defines a reasoning architecture and a loop scheme
+* **BDI** has been formalised into AgentSpeak(L)
+    * Typical implementations adhere to the formal specification
+
+### Simple vs. complex
+
+* **MAPE-K** is simpler
+    * can be implemented on a per-application basis
+* **BDI** requires complex matching ad plan-selection algorithms
+    * hard to build from scratch in a custom fashion
+
+--- -->
+
+# Current project: 
+# *JaKtA*
+
+<br />
+
+<div>
+<small style="text-align: left"> 
+[*] Baiardi, M., Burattini, S., Ciatto, G., & Pianini, D. - Blending BDI Agents with Object-Oriented and Functional Programming with JaKtA. SN Comput. Sci. 5(8): 1003 (2024)
+
+</small>
+</div>
+
+---
+
+## Jakta
+
+- **For software engineers**: Multi-paradigm AOP/BDI+OOP+FP BDI Multi-Agent Systems programming framework
+- **For research**: Using a single tool to express several types of Distributed systems
+- **Key features**: flexibility <i class="fa-solid fa-arrow-right"></i> it allows to plug-in other tools (for example `simulation`) 
+
+
+---
+
+## Still a work in progress
+
+- It currently offer a framework for BDI agents using a `Prolog` DSL
+- Allows the execution of simulation through the `Alchemist` tool
+
+<br />
+<br />
+
+
+## In the future ...
+
+- I am **currently** working on a new version of the tool 
+  - to model simplest agents than the AgentSpeak(L) notion (towards MAPE-K)
+  - to simplify the modularity of the tool
+  - to let agents adopt `aggregate plans` ... seamlessly :)  
+
+---
+
+# Collaboration with CAU
+
+### TBD
