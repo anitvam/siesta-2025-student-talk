@@ -1,9 +1,10 @@
 +++
-title = "Introduction to my research area"
+title = "Overview on my research area"
 outputs = ["Reveal"]
 +++
 
-# Overview on my research area
+# Individual vs Collective Perspective for MAS
+## A quick overview of my research area
 
 ---
 
@@ -12,7 +13,7 @@ outputs = ["Reveal"]
 - 2nd year PhD Student from `University of Bologna` (`UNIBO`)
 - Supervisor: 
 ![](https://www.unibo.it/uniboweb/utils/UserImage.aspx?IdAnagrafica=503326&IdFoto=e1c80103) [Danilo Pianini](https://www.unibo.it/sitoweb/danilo.pianini/en)
-- Research group: `Pervasive Computing`
+- Research group context: `Pervasive Computing`
 
 ---
 
@@ -47,7 +48,7 @@ outputs = ["Reveal"]
 - Active collaboration with the italian industry `SCM Group` that operates worldwide
 - Project: automation for software updates in the context of industrial woodworking machines
   
-  where:
+  challenges:
   - heterogeneous devices
   - globally distributed devices
   - business-critical machines 
@@ -92,13 +93,19 @@ outputs = ["Reveal"]
 - `Macroprogramming / Aggregate Computing`: Controlling multiple devices/entities at once using `space` and `time`. 
   
   Languages, cronologically:
-  - `Protelis`[1]: stand-alone language, not longer evolved but still maintained.
-  - `Scafi`[2]: a Scala Domain-Specific Language (DSL)
-  - `Collektive`[3]: a Kotlin Multi-platform DSL
+  - `Scafi`[1]: a Scala Domain-Specific Language (DSL)
+  - `Collektive`[2]: a Kotlin Multi-platform DSL
 - `BDI Agent-Oriented Programming` 
-  - `JaKtA`[4]: my master thesis, a Kotlin DSL implementation for modelling `BDI` agents.
+  - `JaKtA`[3]: my master thesis, a Kotlin DSL implementation for modelling `BDI` agents.
 - `Simulation`
-  - `Alchemist`[5]: a simulator for pervasive computing, inspired from chemistry reactions.
+  - `Alchemist`[4]: a simulator for pervasive computing, inspired from chemistry reactions.
+- Main skills: 
+  * `Software development`
+  * `Software packaging and delivery`
+  * `Testing automation` 
+  * `Continuous Integration / Continuous Deployment` 
+  * `Build systems`
+
 
 <br />
 <br />
@@ -106,11 +113,10 @@ outputs = ["Reveal"]
 <div>
 <small style="text-align: left">
 
-[1] [https://github.com/Protelis/Protelis](https://github.com/Protelis/Protelis) <br/>
-[2] [https://github.com/scafi/scafi](https://github.com/scafi/scafi)<br/>
-[3] [https://github.com/Collektive/collektive](https://github.com/Collektive/collektive)<br/>
-[4] [https://github.com/jakta-bdi/jakta](https://github.com/jakta-bdi/jakta)<br/>
-[5] [https://github.com/AlchemistSimulator/Alchemist](https://github.com/AlchemistSimulator/Alchemist)<br/>
+[1] [https://github.com/scafi/scafi](https://github.com/scafi/scafi)<br/>
+[2] [https://github.com/Collektive/collektive](https://github.com/Collektive/collektive)<br/>
+[3] [https://github.com/jakta-bdi/jakta](https://github.com/jakta-bdi/jakta)<br/>
+[4] [https://github.com/AlchemistSimulator/Alchemist](https://github.com/AlchemistSimulator/Alchemist)<br/>
 
 </small>
 </div>
@@ -133,7 +139,7 @@ outputs = ["Reveal"]
 
 - A good way to describe the problem allows to explore different perspectives of it.
 
-![](./images/conceptual%20difference.png)
+<img src="./images/conceptual difference.png" width=100% />
 
 ---
 
@@ -491,5 +497,3 @@ Reference <u>framework</u> (*AgentSpeak(L)*) for *Multi-Agent Systems*.
 # Collaboration with CAU
  
 ---
-
-### TBD
