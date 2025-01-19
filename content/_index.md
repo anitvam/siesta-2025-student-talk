@@ -489,5 +489,7 @@ Reference <u>framework</u> (*AgentSpeak(L)*) for *Multi-Agent Systems*.
 ---
 
 # Collaboration with CAU
+ 
+---
 
 ### TBD
