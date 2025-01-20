@@ -199,18 +199,47 @@ outputs = ["Reveal"]
 
 <div class="text-center">
 
-![](./images/federated-learning-aggregate.png)
+![](./images/federated-learning-aggregate.png) 
+<img src ="./images/csm_federated-learning_01_2dea2cd6c5.png" width=50% />
 
 </div>
 
 
+{{% multicol %}}{{% col %}}
+
+<div class="text-center">
+
+
+![](images/scr1.png) 
+![](images/scr2.png) 
+![](images/scr3.png)
+
+</div>
+
+{{% /col %}} {{% /multicol %}}
+
+
+
 {{% /col %}}{{% col %}}
 
-- `Aggregate` is used to distribute the computation
-- I don't know a lot of details, this is a work in progress...
+- The aim is to overcome limitations of traditional federated learning models, where
+  - Clustering is performed by the central server
+  - No. of cluster predefined
+  - Central server is a Single-Point of failure 
 
+- `Aggregate` improves the model of the network adopting `Self-Coordination Regions` (SCR)
+  - Re-election of the leader in case of failure 
+  - Regions are selected on similarity metrics, no pre-defined clustering
 
 {{% /col %}}{{% /multicol %}}
+
+
+<div>
+<small>
+[*] D. Domini, G. Aguzzi, N. Farabegoli, M. Viroli and L. Esterle, "Proximity-based Self-Federated Learning," 2024 IEEE International Conference on Autonomic Computing and Self-Organizing Systems (ACSOS), Aarhus, Denmark, 2024 <br />
+[*] Domini, D., Aguzzi, G., Esterle, L., Viroli, M. (2024). Field-Based Coordination for Federated Learning. In: Castellani, I., Tiezzi, F. (eds) Coordination Models and Languages. COORDINATION 2024
+</small>
+</div>
 
  ---
 
@@ -225,10 +254,7 @@ outputs = ["Reveal"]
 
 <br/>
 
-
 {{< figure src="images/path2.svg" width="50%" >}}
-
-
 
 ---
 
@@ -473,7 +499,6 @@ Reference <u>framework</u> (*AgentSpeak(L)*) for *Multi-Agent Systems*.
 - **For research**: Using a single tool to express several types of Distributed systems
 - **Key features**: flexibility <i class="fa-solid fa-arrow-right"></i> it allows to plug-in other tools (for example `simulation`) 
 
-
 ---
 
 ## Still a work in progress
@@ -497,3 +522,4 @@ Reference <u>framework</u> (*AgentSpeak(L)*) for *Multi-Agent Systems*.
 # Collaboration with CAU
  
 ---
+
