@@ -3,8 +3,9 @@ title = "Overview on my research area"
 outputs = ["Reveal"]
 +++
 
-# Individual vs Collective Perspective for MAS
-## A quick overview of my research area
+# Software Engineering 
+# in the Edge Cloud Continuum: 
+### Industrial Applications and Promising Future
 
 ---
 
