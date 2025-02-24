@@ -1,6 +1,6 @@
-baseURL = "https://anitvam.github.io/my-research-area-introduction"
+baseURL = "https://anitvam.github.io/lehrstuhlklausur-2025"
 languageCode = "en-us"
-title = "Supporting Autonomic Computing via BDI Tooling"
+title = "Software Engineering in the Edge-Cloud-Continuum"
 disableKinds = ["sitemap", "RSS"]
 theme = "reveal-hugo"
 publishDir = "build"
