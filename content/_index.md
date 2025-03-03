@@ -3,524 +3,462 @@ title = "Overview on my research area"
 outputs = ["Reveal"]
 +++
 
-# Software Engineering 
-# in the Edge Cloud Continuum: 
-### Industrial Applications and Promising Future
+# Engineering robust software in the Internet of Industrial Things
 
 ---
 
-# Brief introduction
-
-- 2nd year PhD Student from `University of Bologna` (`UNIBO`)
-- Supervisor: 
-![](https://www.unibo.it/uniboweb/utils/UserImage.aspx?IdAnagrafica=503326&IdFoto=e1c80103) [Danilo Pianini](https://www.unibo.it/sitoweb/danilo.pianini/en)
-- Research group context: `Pervasive Computing`
+# Context
 
 ---
 
-## Some faces and topics we are currently working on
+## From the literature
 
-![](./images/group-act.svg)
+{{% multicol %}}
+{{% col %}}
 
----
+Rapid evolution of software systems: 
+* **Internet of Things (IoT)** 
+* artificial intelligence techniques 
+* adoption of novel development processes
+* heterogeneous hardware
 
-## What am I into
+{{% /col %}}
+{{% col %}}
 
-![](./images/group-act.svg)
 
+{{% fragment %}}
 
-<div class="overlay">
-  <div class="circle-1">
-  </div>
-  <div class="circle-2">
-  </div>
-  <div class="circle-3">
-  </div>
-  <div class="circle-4">
-  </div>
-</div>
+<img src="images/10445601.jpg" />
 
-</circles>
+{{% /fragment %}}
 
----
-
-## Industry
-
-- Active collaboration with the italian industry `SCM Group` that operates worldwide
-- Project: automation for software updates in the context of industrial woodworking machines
-  
-  challenges:
-  - heterogeneous devices
-  - globally distributed devices
-  - business-critical machines 
-
-- Main skills: 
-  * `Software updates` 
-  * `Autonomous pipelines` 
-  * `Containerization` 
-  * `Virtualization` 
-  * `Hypervisors`
+{{% /col %}}
+{{% /multicol %}}
 
 ---
 
-## Deployment
+## Industry 4.0
 
-- Experimenting ways to easily manage several heterogeneous devices and use their resources
-- Two clusters offered to run experiments for both *students* and *researchers*:
-  * AlmaAI cluster
-  * Area 4.0 cluster
-- **Managed from researchers for researchers**
-- Main skills: 
-  * `Container orchestration` (`Docker` and `Kubernetes`)
-  * `Virtualization` 
-  * `Network configuration` 
-  * `Network file system`
-  * `Clustered storage`
+{{% multicol %}}
+{{% col %}}
 
-<br />
-<br />
+* Introduction of **Cyber-Physical Systems (CPSs)** in manufacturing production process <span class="fa fa-arrow-right"> </span> **Cyber-Physical Production Systems (CPPSs)**
+* Increased software complexity 
+* Increasing heterogeneity of devices 
 
-<div>
-<small style="text-align: left"> 
-[*] Baiardi M., Ciatto G., Pianini D. - Infrastructures for the Edge-Cloud Continuum on a Small Scale: A Practical Case Study. ACSOS-C 2023
-</small>
-</div>
+{{% fragment %}}
 
----
+New keyword <span class="fa fa-arrow-right"> </span> **Internet of Industrial Things (IIoT)**
 
-## Conceptualization & Tools
+{{% /fragment %}}
+
+{{% /col %}}
+{{% col %}}
+
+<img src="images/industry40.png" />
 
 
-- `Macroprogramming / Aggregate Computing`: Controlling multiple devices/entities at once using `space` and `time`. 
-  
-  Languages, cronologically:
-  - `Scafi`[1]: a Scala Domain-Specific Language (DSL)
-  - `Collektive`[2]: a Kotlin Multi-platform DSL
-- `BDI Agent-Oriented Programming` 
-  - `JaKtA`[3]: my master thesis, a Kotlin DSL implementation for modelling `BDI` agents.
-- `Simulation`
-  - `Alchemist`[4]: a simulator for pervasive computing, inspired from chemistry reactions.
-- Main skills: 
-  * `Software development`
-  * `Software packaging and delivery`
-  * `Testing automation` 
-  * `Continuous Integration / Continuous Deployment` 
-  * `Build systems`
-
-
-<br />
-<br />
-
-<div>
-<small style="text-align: left">
-
-[1] [https://github.com/scafi/scafi](https://github.com/scafi/scafi)<br/>
-[2] [https://github.com/Collektive/collektive](https://github.com/Collektive/collektive)<br/>
-[3] [https://github.com/jakta-bdi/jakta](https://github.com/jakta-bdi/jakta)<br/>
-[4] [https://github.com/AlchemistSimulator/Alchemist](https://github.com/AlchemistSimulator/Alchemist)<br/>
-
-</small>
-</div>
+{{% /col %}}
+{{% /multicol %}}
 
 ---
 
-## Aggregate vs BDI Agents
+## The Internet of Industrial Things
 
-- Same purpose: a way for representing entities adhering to (some) Autonomic Computing principles
-  - ... but different scopes
+{{% multicol %}}
+{{% col %}}
 
-- `Aggregate Computing` is for representing elements in the environment which exhibit a `collective` behaviour.
-
-- `BDI Multi-Agent Programming` is for representing each entity in an environment using a well-known framework (`AgentSpeak(L)`), inspired from human mental process.
-  - **This is more my expertise area**
-
----
-
-## Conceptualization strengths
-
-- A good way to describe the problem allows to explore different perspectives of it.
-
-<img src="./images/conceptual difference.png" width=100% />
-
----
-
-# Aggregate Applications Examples 
-
----
-
-### Aggregate Swarm simulations
-
-![](https://user-images.githubusercontent.com/23448811/224012578-d375de46-23c3-44e6-99cf-9d937548a1a5.gif)
-![](https://user-images.githubusercontent.com/23448811/224012332-290c81e1-effa-4cab-ae03-c603c116dd99.gif)
+Additional challenges typical of manufacturing systems: 
+* Heterogeneity of devices
+* Hyper-distribution of data (**Edge-Cloud Continuum**)
+* Robustness to faults (**Self-Healing-Fault-Tolerant** techniques)
+* Predictive maintenance 
+* Role of AI and ML in optimizing manufacturing processes
 
 
-<div>
-<small style="text-align: left"> 
+{{% /col %}}
+{{% col class="text-center" %}}
 
-[source: [https://github.com/scafi/macro-swarm](https://github.com/scafi/macro-swarm) 
-]
+{{% fragment %}}
 
-</small>
-</div>
+<img src="images/mickeymouse.jpeg" width=70% />
+
+Seems the perfect fit for SASO systems :)
+
+{{% /fragment %}}
+
+{{% /col %}}
+{{% /multicol %}}
 
 ---
 
-### Reinforcement Learning using Aggregate Models
+## SASO systems
 
-{{% multicol %}}{{% col %}}
+* *Autonomic Computing* research area
+* Aim: Complex and reliable behavior achieved through the interaction of multiple agents
+* Achieved through self-management properties:
+  * self-configuration
+  * self-optimization
+  * self-healing
+  * self-protection
+  * ...
+* *MAPE-K* feedback loop to help achieve properties in system implementation
 
+--- 
 
-![](./images/gaguzzi-paper.png)
+# Beautiful story or reality ?
 
-
-{{% /col %}}{{% col %}}
-
-<div class="text-center">
-
-![](./images/gnn-inside-aggregate.png)
-
-</div>
-
-- `Aggregate` is used to enhance agents' state during reinforcement learning
-- The information is obtained through the adoption of a `Graph Neural Network` in this paper.
-
-
-{{% /col %}}{{% /multicol %}}
-
-
-<small style="text-align: left"> 
-[*] Gianluca Aguzzi, Mirko Viroli, Lukas Esterle: Field-informed Reinforcement Learning of Collective Tasks with Graph Neural Networks. (2023) <br />
-</small>
+<img src="images/29750.svg" />
 
 ---
 
-### Federated Learning using Aggregate Models
+## From the industry
 
-{{% multicol %}}{{% col %}}
+{{% multicol %}}
+{{% col %}}
 
-<div class="text-center">
+* Even if promising, applications in the industrial context are limited
+* We observed a huge **gap** between the state-of-the-art and the state-of-the-practice in manufacturing software systems
 
-![](./images/federated-learning-aggregate.png) 
-<img src ="./images/csm_federated-learning_01_2dea2cd6c5.png" width=50% />
+<span class="fa fa-arrow-right"> </span> Filling this gap is the aim of this project
 
-</div>
+{{% /col %}}
+{{% col class="text-center" %}}
 
+<!-- <img src="images/38196.jpg" /> -->
 
-{{% multicol %}}{{% col %}}
+<img src="images/Dad teaching his son carpentry.jpg" width=80%/>
 
-<div class="text-center">
-
-
-![](images/scr1.png) 
-![](images/scr2.png) 
-![](images/scr3.png)
-
-</div>
-
-{{% /col %}} {{% /multicol %}}
-
-
-
-{{% /col %}}{{% col %}}
-
-- The aim is to overcome limitations of traditional federated learning models, where
-  - Clustering is performed by the central server
-  - No. of cluster predefined
-  - Central server is a Single-Point of failure 
-
-- `Aggregate` improves the model of the network adopting `Self-Coordination Regions` (SCR)
-  - Re-election of the leader in case of failure 
-  - Regions are selected on similarity metrics, no pre-defined clustering
-
-{{% /col %}}{{% /multicol %}}
-
-
-<div>
-<small>
-[*] D. Domini, G. Aguzzi, N. Farabegoli, M. Viroli and L. Esterle, "Proximity-based Self-Federated Learning," 2024 IEEE International Conference on Autonomic Computing and Self-Organizing Systems (ACSOS), Aarhus, Denmark, 2024 <br />
-[*] Domini, D., Aguzzi, G., Esterle, L., Viroli, M. (2024). Field-Based Coordination for Federated Learning. In: Castellani, I., Tiezzi, F. (eds) Coordination Models and Languages. COORDINATION 2024
-</small>
-</div>
-
- ---
-
-
-# How do I choose among these representation?
-## Let's start from an example
+{{% /col %}}
+{{% /multicol %}}
 
 ---
 
-## Distributed Applications
-#### Running on unknown network topologies
+## Industrial case study
 
-<br/>
+* This gap is felt in the industrial environment
+* We have an active collaboration with **SCM Group**, a world leader in producing large woodworking machines.
 
-{{< figure src="images/path2.svg" width="50%" >}}
-
----
-
-#### May be subject to unpredictable connectivity failures
-
-<br />
-
-{{< figure src="images/path2-6.svg" width="50%" >}}
+<img src="images/97ee64746260793f5fa24dc2a8a504e7.png" width=30% />
 
 ---
 
-#### We need *autonomous* entities <br/>capable to *adapt* their behaviour to the failure <br/>and continue to work as expected 
-<br />
+## Industrial case study
 
-{{< figure src="images/path2-6-1.svg" width="50%" >}}
-
----
-
-## *Here lies the first difference*
-
-Viewing system interactions in terms of:
-
-{{% multicol  %}}{{% col class="text-center" %}}
-
-information propagating through <br/> collectives of devices
-
-<i class="fa-solid fa-arrow-down"></i>
-
-`Aggregate Computing`
-
-{{% /col %}}{{% col class="text-center" %}}
-
-individual devices with different interactions <br/> with their peers in the environment
-
-<i class="fa-solid fa-arrow-down"></i>
-
-`Multi-Agent Systems`
-
-{{% /col %}}{{% /multicol %}}
+<img src="images/cdl-accord.png" width=35%/><img src="images/output-yoda-cdl.png" width=20%/>
+<img src="images/sezionatrice_gabbiani.png" width=35%/>
 
 ---
 
-## Agents
+## Industrial case study
 
-<br />
-
-{{< figure src="images/path43-7.svg" width="50%" >}}
-
----
-
-# Agent-Oriented Programming
-
-<br />
-
-
-{{< figure src="images/rect46.svg" width="50%" >}}
-
-<small>[1] Weiss, Gerhard, Multiagent Systems. MIT Press, 2013</small>
+* Managing hybrid `Linux` and `Windows` computing environments
+* Software maintenance is a challenge due to manual configurations and third-party dependencies
+* They need their software system capable to:
+  * autonomously update their software systems when newer updates are released
+  * finely control the operating system version
+  * automatic porting of configuration files between OS/software versions  
+  * autonomously act in case of failures during this procedure
+  * avoid manual intervention for this process
+  * allow software to run on outdated hardware (manufacturing machines have longer lifecycle than software)
 
 ---
 
-# Agent-Oriented Programming
+# Challenges in this case study
 
-<br />
+* **Deployment**: Managing long-lived industrial hardware while keeping software updated.
+Development process is supported by modern techniques (DevOps), but no general tool for deployment.
+The deployment process may fails, thus a *rollback* procedure that bring the machine back to the latest working version is required.
 
-{{< figure src="images/BDIAgents.svg" width="50%" >}}
+* **Heterogeneity**: Handling diverse hardware and software environments across different factories.
+Manufacturing software systems must run for a long time, increasing risk that deployment may fail.
 
-<small>[1] Weiss, Gerhard, Multiagent Systems. MIT Press, 2013</small>
+* **Dependencies**: Ensuring compatibility between 
+  * software versions
+  * software and operating system
+  * software and dependencies (can be *ranges* of compatibilities) 
 
----
-
-
-# BDI?
-
-## Beliefs, Desires, Intentions
-
-<br />
-
-- It's a framework to model Multi-Agent Systems through *Goals*
-- Reduces the *abstraction gap* between *cognitive abstractions* and the abstractions of common paradigms
-  - Mimicking human-level notions such as *beliefs*, *desires* and *intentions*
-
-### three main abstractions:
-
-- *Beliefs*: mental state of the agent, that changes over time.
-- *Desires*: motivational state of the system.
-- *Intentions*: deliberative state of the agent.
-
-<div>
-<br />
-
-<small style="text-align: left"> 
-[1] Bratman, Michael. "Intention, plans, and practical reason." (1987) <br />
-[2] Anand S. Rao and Michael P. Georgeff. "BDI agents: From theory to practice." (1995) <br />
-[3] Anand S. Rao. "Agentspeak(l): BDI agents speak out in a logical computable language." (1996) 
-</small>
-</div>
-
+* **Critical Environment**: Minimizing downtime and maximize reliability in production environments
+  * *dependability* concerns (availability, reliability, maintainability, safety)
+  * *security*
 
 
 ---
 
-# AgentSpeak(L)
+# Goal
 
-
-{{< figure src="images/Interpreting-AgentSpeakL-Programs.png" width="50%" >}}
-
-
----
-
-<!-- # BDI Agent Programming Languages
-
-<br />
-
-{{< figure src="images/AOPlang.svg" width="50%" >}}
-
-<br />
-
-<div>
-<small style="text-align: left"> 
-[1] Collier, R.W., Russell, S.E., Lillis, D.. "Reflecting on agent programming with AgentSpeak(L). I" (2015) <br />
-[2] Hindriks, K.V.. "Programming rational agents in GOAL." (2009) <br />
-[3] Pokahr, A., Braubach, L., Lamersdorf, W.. "Jadex: A BDI reasoning engine." (2005) <br />
-[4] Bordini, R.H., Hübner, J.F., Wooldridge, M.J.. "Programming Multi-Agent Systems in AgentSpeak using Jason." (2007) <br />
-[5] D’Urso, F., Longo, C.F., Santoro, C.. "Programming intelligent iot systems with a python-based declarative tool." (2019) <br />
-[6] Palanca, J., Rincon, J.A., Carrascosa, C., Julián, V., Terrasa, A.. "A flexible agent architecture in SPADE." (2022)
-</small>
-</div> 
+### Reduce the gap between state-of-the-art and state-of-the-practice for
+### Developing autonomous, self-updating, and fault-tolerant
+### manufacturing software systems
 
 ---
 
-## Jakta: multi-paradigm AOP/BDI+OOP+FP
-
-
-```kotlin
-mas {                                                   // BDI specification
-  fun allPlayers(team: String) =
-    Regex("""<a\s(\X*?)\sdata-cy="player">(.*)<\/a>""") // Object-oriented regex library
-        .findAll(URL("https://www.besoccer.com/team/squad/$team").readText())
-        .map { team to it.groupValues[2] }              // Lambda expression (Functional style)
-
-  listOf("napoli", "milan", "internazionale")           // Kotlin standard library
-      .flatMap(::allPlayers)                            // Higher-order function (Functional style)
-      .forEach { (team, player) ->                      // Destructuring declaration
-          agent(player) {
-              beliefs { fact { squad(team) } }
-              goals { achieve(start) }
-              plans {
-                  +achieve(start) onlyIf { squad(S).fromSelf } then {
-                      execute(print("Hello! I play for", S))
-                  }
-              }
-          }
-      }
-}.start()
-```
-
-<i class="fa-solid fa-file-code"></i> [SoccerMas.kt](https://github.com/jakta-bdi/jakta-examples/blob/main/src/main/kotlin/it/unibo/jakta/agents/examples/soccer/SoccerMas.kt) 
+# Methodology
 
 ---
--->
-
-# ...Simplified
-## A lot of similarities with Autonomic Computing MAPE-K cycle
-
-<br/>
-
-{{% multicol %}}{{% col %}}
-
-<img src="images/autonomic-diagram.svg" width="100%" />
-
-<div class="mx-5 text-center">
-
-## *<i class="fa-solid fa-arrow-up"></i> MAPE-K* 
-Reference <u>model</u> for *Autonomic* and *self-\** systems design. 
-
-</div>
-
-{{% /col %}}{{% col  %}}
-
-<div class="mx-5 text-center">
 
 
-<img src="images/bdi-diagram.svg" width="100%" />
+## How to approach this gap.
 
-## *<i class="fa-solid fa-arrow-up"></i> BDI* 
-Reference <u>framework</u> (*AgentSpeak(L)*) for *Multi-Agent Systems*. 
+Approach:
 
-</div>
+1. *Top-down*: Enhancing state-of-the-art SASO systems for adoption in industrial software
 
-{{% /col %}}{{% /multicol %}}
-
-<div>
-<small style="text-align: left"> 
-[*] Baiardi M. - Supporting Autonomic Computing via BDI Tooling. ACSOS-C 2024
-</small>
-</div>
+2. *Bottom-up*: Developing SASO systems to face practical problem in manufacturing
 
 ---
-<!-- 
-# MAPE-K vs. BDI: Key differences
 
-### Conceptual vs. practical
+# Preliminary results 
 
-* **MAPE-K** defines a conceptual model, needs application-specific implementations
-    * favors ad-hoc implementations
-* **BDI** is typically reified into a practical tool (a language or library)
-    * enforces commitment to a technology
+---
 
-### Architectural vs. formal
+## The big picture
 
-* **MAPE-K** defines a reasoning architecture and a loop scheme
-* **BDI** has been formalised into AgentSpeak(L)
-    * Typical implementations adhere to the formal specification
+{{% multicol class="piccolo" %}}
+{{% col %}}
 
-### Simple vs. complex
+**Published**
 
-* **MAPE-K** is simpler
-    * can be implemented on a per-application basis
-* **BDI** requires complex matching ad plan-selection algorithms
-    * hard to build from scratch in a custom fashion
+*Workshop*:
+* Pianini D., et. al. (2024). Multi-Paradigm Integration for the BDI Resurgence. 2024 IEEE International Conference on Autonomic Computing and Self-Organizing Systems Companion (ACSOS-C), Aarhus, Denmark, 2024
+* Baiardi M., et. al. (2024). On the External Concurrency of Current BDI Frameworks for MAS. In: Engineering Multi-Agent Systems. EMAS 2024. 
+* Baiardi M., et. al. (2023). Infrastructures for the Edge-Cloud Continuum on a Small Scale: A Practical Case Study. 2023 IEEE International Conference on Autonomic Computing and Self-Organizing Systems Companion (ACSOS-C), Toronto, ON, Canada, 2023
 
---- -->
+*Doctoral Symposium*:
+* Baiardi M. (2024). Supporting Autonomic Computing via BDI Tooling. 2024 IEEE International Conference on Autonomic Computing and Self-Organizing Systems Companion (ACSOS-C), Aarhus, Denmark, 2024
+* Baiardi, M. (2023). A Step Forward to Widespread BDI AOP: JaKtA. In: Multi-Agent Systems. EUMAS 2023
 
-# Current project: 
-# *JaKtA*
+*Main Conference*:
+* Grushchak D., et al. (2024). Decentralized Multi-Drone Coordination for Wildlife Video Acquisition. 2024 IEEE International Conference on Autonomic Computing and Self-Organizing Systems (ACSOS), Aarhus, Denmark, 2024
+* Baiardi M., et. al. (2024). Concurrency Model of BDI Programming Frameworks: Why Should We Control It? In Proceedings of the 23rd International Conference on Autonomous Agents and Multiagent Systems (AAMAS '24)
+* Baiardi M., et. al. (2023). JaKtA: BDI Agent-Oriented Programming in Pure Kotlin. In: Multi-Agent Systems. EUMAS 2023
 
-<br />
+*Journal*:
+* Baiardi, M., et al. (2024). Blending BDI Agents with Object-Oriented and Functional Programming with JaKtA. SN COMPUT. SCI.
 
-<div>
-<small style="text-align: left"> 
-[*] Baiardi, M., Burattini, S., Ciatto, G., & Pianini, D. - Blending BDI Agents with Object-Oriented and Functional Programming with JaKtA. SN Comput. Sci. 5(8): 1003 (2024)
+{{% /col %}}
+{{% col %}}
+
+**Accepted**
+
+*Doctoral Symposium*:
+* Baiardi, M. (2024). Validation of BDI MASs via Simulation. 2024 IEEE/ACM 28th International Symposium on Distributed Simulation and Real Time Applications (DS-RT)
+
+**Under review**
+
+*Conference*:
+* Aguzzi G., et. al. (2025). A Demonstrator Toolchain for Self-organizing Robot Teams. In: Coordination Models and Languages.
+* Baiardi M., et. al. (2025). Self-healing long-term maintenance of large-scale manufacturing machines. 
+
+*Book chapter*:
+* Baiardi M., et. al. (2025). JaKtA: Better Tools for a Mainstream BDI. In: Agent Toolkits: Yesterday, Today and Tomorrow
+
+*Journal*:
+* Baiardi M., et al. (2025). Using Discrete Event Simulation to Test BDI Systems Before Deployment. In: Auton. Agents Multi Agent Syst.
+
+{{% /col %}}
+{{% /multicol %}}
+
+---
+
+## Top-down: SASO programming frameworks
+
+SASO Systems <span class="fa fa-arrow-right"> </span> Autonomic Computing <span class="fa fa-arrow-right"> </span> MAPE-K general loop
+* No standard implementations for MAPE-K
+* No programming framework to adopt it
+
+A different agent-base approach coming from a neighboring community goes the opposite direction
+* formal abstract semantics definition for their loop
+* several programming frameworks and languages available to adopt its
+
+
+<span class="fa fa-arrow-right"> </span> **Beliefs, Desires, Intentions (BDI) MAS**
+
+
+<small>--- <br/>
+[1] Pianini D., et. al. (2024). Multi-Paradigm Integration for the BDI Resurgence. 2024 IEEE International Conference on Autonomic Computing and Self-Organizing Systems Companion (ACSOS-C), Aarhus, Denmark, 2024 <br/>
+[2] Baiardi M. (2024). Supporting Autonomic Computing via BDI Tooling. 2024 IEEE International Conference on Autonomic Computing and Self-Organizing Systems Companion (ACSOS-C), Aarhus, Denmark, 2024
 
 </small>
-</div>
 
 ---
 
-## Jakta
+### BDI
 
-- **For software engineers**: Multi-paradigm AOP/BDI+OOP+FP BDI Multi-Agent Systems programming framework
-- **For research**: Using a single tool to express several types of Distributed systems
-- **Key features**: flexibility <i class="fa-solid fa-arrow-right"></i> it allows to plug-in other tools (for example `simulation`) 
+* Multi-Agent systems community
+* Terms originally introduced by philosopher Michael Bratman to describe human-based decision making
+* **Procedural Reasoning System** general loop
+* **AgentSpeak(L)** abstract semantics
+* Several language implementations available
 
----
-
-## Still a work in progress
-
-- It currently offer a framework for BDI agents using a `Prolog` DSL
-- Allows the execution of simulation through the `Alchemist` tool
-
-<br />
-<br />
-
-
-## In the future ...
-
-- I am **currently** working on a new version of the tool 
-  - to model simplest agents than the AgentSpeak(L) notion (towards MAPE-K)
-  - to simplify the modularity of the tool
-  - to let agents adopt `aggregate plans` ... seamlessly :)  
+Agents are describes through:
+* **Beliefs**: knowledge of the agent about the environment
+* **Desires**: goals the agent pursues
+* **Intentions**: (not explicit) intentional state of the agents, actions he is committed to down
+* **Plans**: set of tasks the agent is capable to down
 
 ---
 
-# Collaboration with CAU
- 
+## Do you see now the similarities? 
+
+<img src="images/autonomic-diagram.svg" width=40% />
+<img src="images/bdi-diagram.svg"  width=40% />
+
+**Why not take BDI as implementation framework for SASO systems**
+
+<small>--- <br/>
+[1] Pianini D., et. al. (2024). Multi-Paradigm Integration for the BDI Resurgence. 2024 IEEE International Conference on Autonomic Computing and Self-Organizing Systems Companion (ACSOS-C), Aarhus, Denmark, 2024 <br/>
+[2] Baiardi M. (2024). Supporting Autonomic Computing via BDI Tooling. 2024 IEEE International Conference on Autonomic Computing and Self-Organizing Systems Companion (ACSOS-C), Aarhus, Denmark, 2024
+
+</small>
+
 ---
+
+## Top-down: BDI as a programming framework for SASO systems
+
+* we investigated the reasons why BDI frameworks are not considered viable for implementing SASO systems
+* we understood that the available technologies were not sufficiently suitable to satisfy today's needs.
+
+---
+
+Reasons:
+1. Learning curve vs. Ergonomics
+2. Development Tooling
+3. Middleware/Runtime Requirements
+4. Concurrency model
+
+<img src="images/ergonomy.png" />
+
+<small>--- <br/>
+[3] Baiardi, M. (2023). A Step Forward to Widespread BDI AOP: JaKtA. In: Multi-Agent Systems. EUMAS 2023 <br/>
+[4] Baiardi M., et. al. (2023). JaKtA: BDI Agent-Oriented Programming in Pure Kotlin. In: Multi-Agent Systems. EUMAS 2023
+</small>
+
+---
+
+## Top-down: A novel BDI framework for SASO systems
+
+Development of JaKtA, a BDI (Beliefs-Desires-Intentions) Multi-Agent System framework
+
+Reduce developers' barriers to learning the BDI paradigm by:
+* Providing BDI abstractions to a large community of developers with
+* Offering an ergonomy akin to the one of a dedicated programming language (Kotlin internal DSL)
+* Inheriting the existing tooling of Kotlin
+* Multiplatform compilation using a single and shared code base;
+* Decoupling BDI entities' definition from their execution. 
+
+
+<small>--- <br/>
+[5] Baiardi, M., et al. (2024). Blending BDI Agents with Object-Oriented and Functional Programming with JaKtA. SN COMPUT. SCI.
+</small>
+
+---
+
+## Top-down: Concurrency management for BDI systems
+* concurrency management is crucial when dealing with heterogeneous manufacturing systems
+* state-of-the-art BDI tooling hides these decisions under their implementations
+* <span class="fa fa-arrow-right"> </span> we identified this lack in the BDI toolings [6]
+* <span class="fa fa-arrow-right"> </span> we defined *external* concurrency in BDI frameworks [6,7]
+* <span class="fa fa-arrow-right"> </span> we classified available tools upon this definition [7]
+
+
+<small>--- <br/>
+[6] Baiardi M., et. al. (2024). On the External Concurrency of Current BDI Frameworks for MAS. In: Engineering Multi-Agent Systems. EMAS 2024. <br/>
+[7] Baiardi M., et. al. (2024). Concurrency Model of BDI Programming Frameworks: Why Should We Control It? In Proceedings of the 23rd International Conference on Autonomous Agents and Multiagent Systems (AAMAS '24)
+</small>
+
+---
+
+## Top-down: Simulation as a validation tool for BDI systems
+
+* Manufacturing SASO systems are running in non-deterministic environments 
+* a way to correctly identify runtime issues ahead of deployment is fundamental
+* <span class="fa fa-arrow-right"> </span> Simulation-based validation for real-time distributed systems
+* <span class="fa fa-arrow-right"> </span> Evaluation of existing options for simulating BDI systems
+* <span class="fa fa-arrow-right"> </span> Evaluated all possible mappings between DES events and BDI events
+
+<small>--- <br/>
+[8] Baiardi, M. (2024). Validation of BDI MASs via Simulation. 2024 IEEE/ACM 28th International Symposium on Distributed Simulation and Real Time Applications (DS-RT) <br/>
+[9] Baiardi M., et al. (2025). Using Discrete Event Simulation to Test BDI Systems Before Deployment. In: Auton. Agents Multi Agent Syst.
+
+</small>
+
+--- 
+
+## Bottom-up: SASO update system requirements definition
+
+1. **One update system for all subsystems**:  the update system should centrally manage all software updates for the machine (including OS).
+2. **Software Validation**: A new level of testing introduced directly on the target machine.
+3. **Multi-source Retrieval**: Different machines, different network configurations
+4. **Rollback-restore mechanisms**: Automatic detection and management of failures that occur while a software bundle is being installed
+5. **Downgrade-restore mechanisms**: reverting the system to a previous working state after a successful upgrade
+6. **Containerization and virtualization**: to ease dependencies versions management
+7. **Configurability**: the update system must adapt to the destination industrial environment business process
+
+---
+
+## Bottom-up: SASO Deployment lifecycle for manufacturing software systems
+
+<img src="images/interactions.png" />
+
+
+---
+
+## Bottom-up: Patent
+
+* Even though the development process of the update system is still ongoing
+* Italian National Patent (nr. S3196I-12IT3) entitled <br/> "Metodo per installare una pluralità di software dipendenti in una macchina".
+
+---
+
+# Roadmap
+
+---
+
+## Top-down: Logic-free JaKtA
+
+* BDI programming frameworks are often associated with Logic Programming 
+* Logic programming never gained the popularity of other languages
+* BDI model is general enough to define agents without rely on logical inference
+* Investigating if separating Logic Programming from BDI frameworks would ease their adoption is worth a try 
+
+---
+
+## Top-down: Autonomic BDI
+
+* More generic reasoning cycle towards integrating BDI and AC
+* Detaching Logic Programming from BDI framework is propaedeutic to this
+* In the future our framework would become an extensible and modular engine on which multiple autonomous entities can be modeled 
+
+---
+
+## Top-down: Macroprogramming BDI
+
+* Create a MAS composed of individuals, that at certain point require to compute something as-a-whole, from the *collective* perspective of all devices.
+* Some investigations were previously made in the literature, with the notion of _aggregate plans_ for MASs
+* **Aggregate Computing** / **Organic Computing** research area
+
+---
+
+## Bottom-down: Virtualization
+
+* Enhancing software deployment automation via virtualization and containerization
+* finely manage the Os versions installations
+* currently evaluating **hypervisors** performance for this task.
+
+---
+
+## Bottom-up: Experiments
+
+* Industry is *finally* testing our system proposal
+* Collect information about the improvement of their release and deployment process 
+
+--- 
+
+# Conclusion
+
+* Self-Healing-Fault-Tolerant techniques are fundamental for manufacturing software systems
+* Still dealing on how to bridge the two branches under investigation
+
+
 
