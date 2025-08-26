@@ -1,6 +1,6 @@
-baseURL = "https://anitvam.github.io/lehrstuhlklausur-2025"
+baseURL = "https://anitvam.github.io/siesta-2025-student-talk"
 languageCode = "en-us"
-title = "Software Engineering in the Edge-Cloud-Continuum"
+title = "Agents in the Field"
 disableKinds = ["sitemap", "RSS"]
 theme = "reveal-hugo"
 publishDir = "build"
