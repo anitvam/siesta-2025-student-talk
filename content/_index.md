@@ -6,6 +6,10 @@ outputs = ["Reveal"]
 # Cognitive Agents in the Field: 
 # an Hybrid Approach Between Agent-Oriented and Aggregate Computation
 
+
+### Martina Baiardi
+### Supervisor: Danilo Pianini
+
 ---
 
 ## Context: Autonomous Systems
@@ -14,8 +18,8 @@ outputs = ["Reveal"]
 {{% col %}}
 
 * Increasingly present in our lives: drones, self-driving cars, autonomous navigation, smart cities.
-* The challenge is to **model** both the behavior of **individual agents** (equipped with goals and decision-making abilities) 
-and the emergent **collective phenomena** that arise from the interaction of many agents. 
+* Agents behavior is **modeled** either as **individual agents** (equipped with goals and decision-making abilities) 
+or as an emergent **collective phenomena** that arise from the interaction of many agents. 
 
 
 {{% /col %}}
@@ -35,7 +39,7 @@ and the emergent **collective phenomena** that arise from the interaction of man
 {{% multicol %}}
 {{% col %}}
 
-Two main approaches, 
+Two approaches, 
 developed in different research areas, 
 are particularly useful in this context:
 
@@ -90,5 +94,4 @@ Creation of an open-source software platform for developing intelligent and adap
 <br/>with possible applications including:
 
 * *Mobility*: drone fleets for environmental monitoring or deliveries, autonomous driving.
-* *Smart city*: dynamic traffic management.
 * *Industry 4.0*: industrial machines capable of self-organizing and cooperating within the production line.
